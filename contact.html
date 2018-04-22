@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><!-- this specifices the language of html -->
+<head>
+	<title>My first web page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- this codes is responsible for responsive mobile view port -->.
+	<link rel="stylesheet" type="text/css" href="css/main.css"><!-- this code linked to main.css -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- this code is used for font family which had been download from google api -->
+</head>
+<body>
+	<nav>
+		<ul>
+		   <li><img src="Image/download.jpg" alt="Image logo"></li>
+		   <li><a href="index.html">Home</a></li>
+		   <li><a href="about.html">About me</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="CV.html">CV</a></li>
+			<li><a href="social.html">Social</a></li>
+			<li><a href="modelgp.html">Model.gp</a></li>
+		</ul>
+	</nav>
+         <div class="contact">
+         	<form action="form"><!-- this creates a form -->
+	            <h3>Please, fill up the form if you really want to get a contact  me.</h3>
+					<label for="fname">First Name</label><br><!-- label tag creates a text area -->
+					<input type="text" id="fname" name="firstname" placeholder="Your first name..." required><br><!-- input tag allows to enter a text -->
+					<label for="mname">Middle Name</label><br>
+					<input type="text" id="mname" name="middlename" placeholder="Your Middle name.." required><br>
+				    <label for="lname">Last Name</label><br>
+				    <input type="text" id="lname" name="last name" placeholder="Your last name.." required><br>
+				    <label for="country">Country</label><br>
+				    <select id="country" name="country"><!-- select tag creates a dropdown buttom -->
+				    	<option value="#">Nepal</option>
+				    	<option value="#">India</option>
+				    	<option value="#">China</option>
+				      	<option value="#">Australia</option>
+				      	<option value="#">Canada</option>
+				      	<option value="#">USA</option>
+				      </select><br>
+                    <label for="subject">Subject</label><br>
+				      <textarea id="subject" name="subject" placeholder="write something.."></textarea><br>
+				      <input type="submit" value="Submit">
+		    </form>
+				<br>
+			   <div class="map1">
+			      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22836.249948809123!2d85.38243263411111!3d27.712733356674217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb8e1a147cb4dc56c!2sNayaa+Aayaam+Multi-Disciplinary+Institute+(NAMI)!5e0!3m2!1sen!2snp!4v1523764318162" width="1450" height="400" allowfullscreen></iframe><!-- here i have uploaded a map  location of mine residence -->
+			    </div>
+	    </div>
+	 <footer>
+    	<h3>Follow me on:</h3>
+    	<a href="facebook.com" class="fa fa-facebook"></a>
+    	<a href="youtube.com" class="fa fa-youtube"></a>
+    	<a href="instagram.com" class="fa fa-instagram"></a>
+    	<a href="twitter.com" class="fa fa-twitter"></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,445 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: white;
+	background-color: black; /*i gave backgroundcolor for all the web pages*/
+		
+}
+
+ nav ul li {
+    list-style-type: none;
+  
+   }
+li {
+	float: left;/**/
+}
+li a { 
+	display: block;
+	padding: 18px;
+	color:powderblue;/*I gave powderblue color for listed element in navigation bar*/
+	text-align: center; 
+	text-decoration: none;
+	text-transform: uppercase;
+	}
+	li a,
+	li a:after,
+	li a:before{
+		transition: all .6s;
+	}
+	li a:hover { /*this code changes powderblue color into maroon when mouse is hovered to list element*/
+		color: maroon;
+	}
+	/*footer*/
+	footer {
+		color: powderblue;
+	}
+	.fa {
+		padding: 18px;
+		text-decoration: none;
+		font-size: 28px;
+		width: 48px;
+		text-align: center;	
+		margin: 4px 2px;/*I gave margin for the social media icons */
+	}
+	.fa-facebook {
+		background: blue;/*i gave background color blue for facebook icon*/
+		color: white;/*i gave white color to text*/
+	}
+	.fa-youtube {
+		background: maroon;
+		color: white;
+	}
+	.fa-instagram {
+		background: maroon;
+		color: white;
+	}
+	.fa-twitter{
+		background: #55ACEE;
+		color:white;
+	}
+	footer .fa{
+		-webkit-animation-name:footer;
+		-webkit-animation-duration: 5s; /*I made animation duration for 5 second*/
+	}
+	@-webkit-keyframes footer {
+		from {transform: rotateX(50deg);}/* this code displayed animation of footer which will be rotate in 360deg*/
+		to {transform: rotateX(360deg);}
+
+	}
+	/*index css*/
+	.container img{
+		width: 100%; /*I gave appropriate height and with to fixed the image*/
+		height: 60%;
+	}
+    .container h2{
+	text-align: center;/*this code displayed the text into center*/
+	margin-top: -250px;
+    }
+	.centered {
+    position: absolute;/*this made the position of text absolute*/
+    top: 50%;/*this enables the text to display over image*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .centered h2{
+	font-family: 'Cambay', sans-serif;
+	font-size: 60px;
+	color: #2DDAEC;
+	/*border-radius: 40px;*/
+	 text-shadow: 5px 5px 10px black;
+    }
+    .centered b{
+    	font-size: 30px;
+    	color: black;
+        text-shadow: 3px 3px 5px lightgreen;/*This fills the text with lightgreen shadow*/
+    }
+    .centered h2{
+    	-webkit-animation-name:text;
+    	-webkit-animation-duration: 5s;/*The text will be animated for 5 second*/
+    }
+    @keyframes text{
+    	from {transform: rotateY(60deg);}/*this animated the text to rotate from 60 deg to 360 deg.*/
+    	to {transform: rotateZ(360deg);}
+    }
+	/*aboutme css*/
+	.right-column img{
+		margin: 0%;
+		float: right;/*image float to right side*/
+		width: 30%;
+		height: 700px;
+		padding: 60px;
+	    padding-top: 100px;/*I gave padding top to move it down*/
+	}
+	.about h1 {
+               color: powderblue;
+               padding-top: 100px; /*i gave paddingtop to move .abouth1*/ 
+               padding-left: 20px; /*i gave padding left to push it to right*/
+	 }
+	.about p{
+            color: white;
+/*            padding-bottom: 80px;
+*/            padding-left: 20px;
+	}
+    .graduationcap_map {
+    	    font-size: 35px;
+    	    color: grey;/*i gave grey color  for graduation cap icon*/
+
+    }
+    .graduationcap_map .text{
+    	     color: white;
+    	     font-family: sans-serif;
+    	     font-size: 20px; /*i gave fontsize of 20px	*/   
+    }
+
+
+    /*contact.css*/
+    
+    input[type=text], select, textarea {/*this allows to input a text*/
+    width: 50%;
+    padding: 12px;
+    /*border: 1px solid #FCFCFE;*/
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;/*this code will push to 6px bottom from top*/
+    margin-bottom: 16px;/*this code will push to 16px top from bottom*/
+    resize: vertical;
+
+}
+.contact{
+	color: white;/*this will display white colour*/
+	padding: 50px;
+}
+.contact h3{
+	color: white;
+
+}
+input[type=submit] {/*this allows for submit text*/
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px; 
+}
+.map1{
+	width: 100%;
+	}
+/* CV.css*/
+
+.container1 h1{
+	text-align: center;
+	color: white;
+	margin-top: -234px;
+}
+table, th, td {
+	border: 1px solid #D5DCD8; /*i made white colour border for table*/
+	color: white;/*this indicates text will be in white colour*/
+}
+.conatiner1{
+	display: inline-flex;
+}
+
+.welcome{
+	padding-top: 120px;/* this moves the text 120px down*/
+	color: white;
+	text-align: center;
+	padding-bottom: 100px;
+	 text-shadow: 5px 5px 10px red;/*this will display the text into red text shadow */
+}
+
+.container1{
+animation-name: delay;
+	animation-duration: 3s;
+	display: inline-flex;
+
+}
+@keyframes delay{
+	0%{
+		opacity: 0;/*This animation will display the opacity from 0 to 1*/
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.table-2{
+	color: #fff;
+	margin-left:120px;
+	border:5px solid #fff;
+	padding: 5%;
+}
+.table-2 h3{
+	color: powderblue;
+}
+.table-3{
+	color: white;/*this display white colour text*/
+	margin-left:120px;
+	border:5px solid #fff;
+}
+.table-3 h3{
+	color: powderblue;
+}
+
+
+
+
+/*Social.css*/
+.thunderimg{
+	background-image: url(../Image/thunderimg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;/*This will disable the repeatation of background image*/
+	width: 100%;/*Giving 100% width it display full length image*/
+	height: 20%;
+
+}
+
+
+.social{
+	text-align: center;
+	color: powderblue;
+	padding: 100px;
+}
+ .media .fa {
+  padding: 50px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;/*This makes the textdecoration none*/
+  border-radius: 50%;
+}
+ .facebook .fa-facebook {/*this will display a facebook icon which i get refrences from W3 school*/
+  background: #3B5998;
+  color: white;
+  margin-left: 50px;/*This code push the text to right*/
+}
+.twitter .fa-twitter {/*this will display twitter icon which i get reference from w3 schools.*/
+  background: #55ACEE;
+  color: white;
+  margin-left: 50px;
+}
+
+.google .fa-google {
+  background: #dd4b39;
+  color: white;
+  margin-left: 50px;
+}
+.youtube .fa-youtube {/*this will display youtube channel which i get refrences from w3 schools*/
+  background: #bb0000;
+  color: white;
+  margin-left: 50px;
+}
+
+.instagram .fa-instagram {/*this will display an instagram icon which i get refences from w3 schools*/
+  background: #125688;
+  color: white;
+  margin-left: 50px;
+}
+ .media {
+	float:left;
+	list-style-type: none; /*This makes the list style type none*/
+	text-decoration: none;
+	display: flex;/*this display the list of icons in flex*/
+	flex-direction: row;/*This will display the flex into row*/
+	padding: 180px;
+	margin-bottom: 100px;
+}
+
+.media .fa{
+	animation-name: social;
+	animation-duration: 5s;/*This will animated for duration of 5s
+*/}
+
+@keyframes social{
+	from{
+		transform: rotateY(5deg);/*This will transform the listed social media icons from rotateY(5deg)
+		                          to rotateY(360deg) */
+	}
+	to{
+		transform: rotateY(360deg);
+	
+
+	}
+}
+@media only screen and (max-width: 650px) {/*this allows to made media viewport means it must be view in any mobile device.*/
+        li{
+        	margin-bottom: 1.5px;
+        	display: flex;
+        	flex-direction: row;
+        }
+        nav ul, li {
+        	width: 100%;
+        }
+        .centered h2{
+        	font-size: 20px;/*This makes the fontsize of 20 px*/
+        	margin-top: 400px;
+        }
+        .right-column img{
+        	max-width: 100%;
+        	float: left;/*This will float image to left which was initially on right*/
+        	width: 100%;
+        	 }
+        .map1 iframe{
+        	width: 100%;/*this will display full length of image in mobile view too*/
+        }
+        .container1{
+        	display: flex;
+        	flex-direction: column;/*this will display flex into column which was initially in row */
+        }
+       .table-2, .table-3{
+       	margin-left: -0.5%;
+        }
+        .media{
+        	display: flex;
+        	flex-direction: column;
+        	margin-right: 60%;
+        }
+        .centered b{
+        	font-size: 15px;
+        	margin-bottom: 30px;
+        }
+}
+
+/*Model.gp*/
+body.modelgp{
+	margin-left: 13%;
+	margin-right: 13%;
+}
+
+body.modelgp section img.coverpage{
+	margin-right: 15%;
+}
+body.modelgp section div.text{
+	text-align: center;
+	margin-left: 4%;
+}
+body.modelgp h1.intro{
+	margin-left: 5%;
+	color: powderblue;
+} 
+body.modelgp .firstpara{
+	margin-left: 5%;
+} 
+body.modelgp .design {
+	color: powderblue;
+	margin-left: 5%;
+}
+body.modelgp img.sample1{
+	width: 100%;
+}
+body.modelgp img.sample2{
+	margin-top: 3%;
+	width: 100%;
+}
+body.modelgp .firstpara h2{
+	color: powderblue;
+}
+
+ body.modelgp .secondpara{
+ 	margin-left: 5%;
+ }
+ body.modelgp .secondpara h1{
+ 	color: powderblue;
+ }
+ body.modelgp .secondpara img.homepagesketch{
+ 	height: 50px;
+ 	width: 50px;
+ }
+ body.modelgp .secondpara h2{
+ 	color: powderblue;
+ }
+ body.modelgp .thirdpara h1{
+ 	color: powderblue;
+ }
+ body.modelgp .thirdpara {
+ 	margin-left: 5%;
+ }
+ body.modelgp .thirdpara h2{
+ 	color: powderblue;
+ }
+ body.modelgp .thirdpara img.socialshot {
+ 	width: 100%;
+ }
+ body.modelgp .fourthpara {
+ 	margin-left: 5%;
+ }
+ body.modelgp .fourthpara h1, h2{
+ 	color: powderblue;
+ }
+ body.modelgp .fifthpara {
+ 	margin-left: 5%;
+
+ }
+ body.modelgp .fifthpara h1{
+ 	color: powderblue;
+ }
+	
+
+
+        
+        
+        
+   
+        
+        
+        
+               
+
+        
+       
+       
+        
+        
+        
+        
+		
+ 
+
+
+
+
+
+
+
+
+
+
+
+    
